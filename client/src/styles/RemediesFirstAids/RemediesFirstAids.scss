@@ -1,0 +1,49 @@
+@mixin boxNeu { 
+    border-radius: 18px;
+    background: #f0f0f0;
+    box-shadow:  18px 18px 45px #d1d1d1,
+                 -18px -18px 45px #ffffff;
+    margin: 50px 0; 
+}
+
+@mixin paddingContainer { 
+    padding: 30px 0 10px 20px;  
+}
+
+@mixin containerStyles { 
+    @include paddingContainer(); 
+    @include boxNeu();
+}
+
+.result-container { 
+    margin: 0 80px;
+
+    .title-result { 
+        @include boxNeu(); 
+        display: grid;
+        place-items: center;
+        height: 40vh;
+        max-width: 100%;
+
+        .img-container { 
+            max-width: 500px;
+            background-color: red;
+            height: 10vh;
+        }
+    }
+
+    .info-container { 
+        @include containerStyles();
+    }
+
+    .cause-container { 
+        @include containerStyles();
+    }
+
+    .symptoms-container { 
+        @include containerStyles();
+    }
+    .instruction-container { 
+        @include containerStyles(); 
+    }
+}
