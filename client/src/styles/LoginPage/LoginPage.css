@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap");
+.login-container {
+  box-sizing: border-box;
+  margin: 0 80px;
+}
+.login-container .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+.login-container .form-container h2 {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+.login-container .form-container .regis-container {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.login-container .form-container .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .form-container .form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.login-container .form-container .form input {
+  border-radius: 7px;
+  border: 1px solid rgb(190, 188, 188);
+  width: 300px;
+  height: 30px;
+  max-width: 100%;
+  margin-top: 1em;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.login-container .form-container .form button {
+  border-radius: 7px;
+  border: 1px solid rgb(190, 188, 188);
+  margin: 20px 0;
+  padding: 10px 9.3em;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.login-container .form-container .soc-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3em;
+  width: 8.3em;
+  position: relative;
+}
+.login-container .form-container .soc-btn button {
+  border-radius: 7px;
+  border: 1px solid rgb(190, 188, 188);
+  margin-top: 10px;
+  padding: 5px 100%;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=LoginPage.css.map */

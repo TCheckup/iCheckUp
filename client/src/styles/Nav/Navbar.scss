@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap');
+
+// hover effects for nav bar
+@mixin nav_hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.section-nav {
+   padding: 1em 5em; 
+   margin: 25px 5em;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   border-bottom: 1px solid rgb(131, 131, 131);
+
+   // nav container
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        // iCheckUp logo
+        .logo {
+            cursor: pointer;
+
+            // logo 
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: 35px;
+                font-weight: 800;
+            }
+        }
+
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+
+                // text
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    margin-left: 3em;
+                
+                    &:hover {
+                        @include nav_hover();
+                    }
+
+                    &:focus {
+                        @include nav_hover();
+
+                    }
+                }
+                
+                // login button
+                .login { 
+                    border: 1px solid #000;
+                    padding: 10px 30px;
+                    border-radius: 7px;
+                    
+
+                    &:hover { 
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+

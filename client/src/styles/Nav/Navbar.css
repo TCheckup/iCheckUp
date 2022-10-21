@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap");
+.section-nav {
+  padding: 1em 5em;
+  margin: 25px 5em;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid rgb(131, 131, 131);
+}
+.section-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-nav nav .logo {
+  cursor: pointer;
+}
+.section-nav nav .logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+  font-weight: 800;
+}
+.section-nav nav ul {
+  display: flex;
+}
+.section-nav nav ul li {
+  list-style: none;
+}
+.section-nav nav ul li a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 3em;
+}
+.section-nav nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.section-nav nav ul li a:focus {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.section-nav nav ul li .login {
+  border: 1px solid #000;
+  padding: 10px 30px;
+  border-radius: 7px;
+}
+.section-nav nav ul li .login:hover {
+  text-decoration: none;
+  font-weight: 600;
+}/*# sourceMappingURL=Navbar.css.map */
