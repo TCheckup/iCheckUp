@@ -1,11 +1,9 @@
 import React from 'react'
 
 // components 
-import SearchBar from '../components/SearchBar';
-
+import SearchBar from '../components/Searchbar';
 // css  
 import '../styles/RemediesFirstAids/RemediesFirstAids.css';
-import '../styles/SearchBar/SearchBar.css';
 
 const RemediesFirstAid = () => {
   return (
