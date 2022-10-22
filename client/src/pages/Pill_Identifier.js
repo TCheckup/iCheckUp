@@ -1,11 +1,16 @@
 import React from 'react'
 
+// components 
+import SearchBar from '../components/SearchBar';
+
+// css 
 import '../styles/Pill_Identifier/Pill_Identifier.css';
 
 
 const Pill_Identifier = () => {
   return (
     <section>
+        <SearchBar />
         <div className='nav-pillID'>
             <h2>Pill ID</h2>
             <button>Clear</button>

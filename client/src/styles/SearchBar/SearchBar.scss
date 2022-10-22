@@ -1,0 +1,25 @@
+@mixin boxNeu { 
+    border-radius: 18px;
+    background: #f0f0f0;
+    box-shadow:  18px 18px 45px #d1d1d1,
+                 -18px -18px 45px #ffffff;
+    margin: 50px 0; 
+}
+
+$fontSize: 15px; 
+
+.search-bar { 
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 100%;
+
+    input { 
+        grid-row: 1; 
+        grid-column: 2;
+        padding: $fontSize;
+        border: 1px solid rgb(189, 189, 189);
+        @include boxNeu();
+        font-size: $fontSize;
+    }
+}
