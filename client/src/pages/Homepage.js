@@ -13,9 +13,9 @@ const Homepage = () => {
         {/* Search Bar */}
         <div className='intro'>  
           <h2 className='title-home'>
-            Greetings, {username}
-          </h2>
-          <p>Start Symptoms</p>
+            Greetings, 
+          </h2>{username}
+          <Link to="/start-symptoms-checker">Start Symptoms Checking</Link>
         </div>
 
         {/* Buttons */}
