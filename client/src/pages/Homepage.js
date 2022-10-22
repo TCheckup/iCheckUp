@@ -12,36 +12,46 @@ const Homepage = () => {
       <section>
         {/* Search Bar */}
         <div className='intro'>  
-          <h2 className='title-home'>
-            Greetings, 
-          </h2>{username}
-          <Link to="/start-symptoms-checker">Start Symptoms Checking</Link>
+
+          <div className='description-container'> 
+            <h2 className='title-home'>
+              Greetings, {username}
+            </h2>
+             <Link to="/start-symptoms-checker">Start Symptoms Checking</Link>
+            <button>Start Symptoms</button>
+          </div>
+          <div className='img-descp-container'> 
+
+          </div>
+          
         </div>
 
         {/* Buttons */}
         <div className='home-btns'>
-          <div className='section-1'>
+          <div className='text section-1'>
             <Link to="/remedies-and-first-aids">Remedies and First Aids</Link>
           </div>
-          <div className='section-2'>
+          <div className='text section-2'>
             <Link to="/symptoms-tracker">Symptoms Tracker</Link>
           </div>
-          <div className='section-3'>
+          <div className='text section-3'>
             <Link to="/pill-identifier">Pill Identifier</Link>
           </div>
-          <div className='section-4'>
+          <div className='text section-4'>
             <Link to="/medical-book">Medical Book</Link>
           </div>
         </div>  
 
         {/* Find hospital */}
         <div className='find-hospital'>
-          <div className="title-map">
-            <p>Find Clinic Near You</p>
+            <h2>Find Clinic Near You</h2>
+            <div className='map-container'>
           </div>
         </div>
 
         <div className='feedback-container'>
+          
+          <h2>Send Feedback</h2>
           <input type="text" placeholder='Write a feedback' />
           <button>Submit Feedback</button>
         </div>

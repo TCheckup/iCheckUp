@@ -1,10 +1,15 @@
 import React from 'react'
 
+// components 
+import SearchBar from '../components/SearchBar';
+
+// css  
 import '../styles/MedicineReminder/MedicineReminder.css';
 
 const MedicineReminder = () => {
   return (
     <section>
+        <SearchBar />
         <div className="calendar-container">
             <div className="calendar">
 
