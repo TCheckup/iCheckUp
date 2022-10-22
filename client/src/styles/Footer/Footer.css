@@ -1,0 +1,38 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px;
+  padding: 50px;
+  background-color: #05204A;
+  color: #ffffff;
+}
+.footer-container .about-us-con {
+  padding: 20px;
+}
+.footer-container .about-us-con .soc-icons a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container .service-containers {
+  padding: 20px;
+}
+.footer-container .service-containers ul li {
+  margin-bottom: 5px;
+}
+.footer-container .service-containers ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container .links-container {
+  padding: 20px;
+}
+.footer-container .links-container ul li {
+  margin-bottom: 5px;
+}
+.footer-container .links-container ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}/*# sourceMappingURL=Footer.css.map */
