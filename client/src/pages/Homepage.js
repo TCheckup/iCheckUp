@@ -1,6 +1,8 @@
 import React, { useState }from 'react'
 import { Link } from 'react-router-dom';
  
+// components 
+import SearchBar from '../components/Searchbar';
 
 // styles 
 import '../styles/Homepage/Homepage.css';
@@ -11,19 +13,16 @@ const Homepage = () => {
     <>
       <section>
         {/* Search Bar */}
+        <SearchBar />
         <div className='intro'>  
-
           <div className='description-container'> 
             <h2 className='title-home'>
               Greetings, {username}
             </h2>
-             <Link to="/start-symptoms-checker">Start Symptoms Checking</Link>
             <button>Start Symptoms</button>
           </div>
           <div className='img-descp-container'> 
-
           </div>
-          
         </div>
 
         {/* Buttons */}

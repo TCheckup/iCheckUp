@@ -70,7 +70,7 @@ section .find-hospital .map-container {
   border-radius: 19px;
 }
 section .feedback-container {
-  margin: 0 80px;
+  margin: 0 80px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;

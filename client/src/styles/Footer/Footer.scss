@@ -1,0 +1,70 @@
+$baseColor: #ffffff; 
+
+@mixin paddingBox {
+    padding: 20px;
+}
+
+@mixin  removeDefaultAnchor {
+    text-decoration: none;
+    color: $baseColor; 
+}
+
+.footer-container { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+    padding: 50px;
+    background-color: #05204A;
+    color: $baseColor;
+
+    .about-us-con {
+        @include paddingBox();
+
+        .soc-icons { 
+        
+            a { 
+                margin-right: 5px;
+                @include removeDefaultAnchor();
+            }
+        }
+
+    }
+    
+
+    .service-containers{ 
+        @include paddingBox();
+        
+        ul { 
+
+            li { 
+                margin-bottom: 5px;
+
+                a { 
+                    cursor: pointer;
+                    @include removeDefaultAnchor();
+                    
+                }
+            }
+        }
+    }
+
+
+
+    .links-container { 
+        @include paddingBox();
+        
+        ul { 
+
+            li { 
+                margin-bottom: 5px;
+
+                a { 
+                    cursor: pointer;
+                    @include removeDefaultAnchor();
+
+                }
+            }
+        }
+    }
+
+}
