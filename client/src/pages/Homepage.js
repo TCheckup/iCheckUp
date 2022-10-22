@@ -15,7 +15,7 @@ const Homepage = () => {
           <h2 className='title-home'>
             Greetings, {username}
           </h2>
-          <p>Start Symptoms</p>
+          <button>Start Symptoms</button>
         </div>
 
         {/* Buttons */}

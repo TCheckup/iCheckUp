@@ -1,1 +1,46 @@
-/*# sourceMappingURL=RemediesFirstAids.css.map */
+.result-container {
+  margin: 0 80px;
+}
+.result-container .title-result {
+  border-radius: 18px;
+  background: #f0f0f0;
+  box-shadow: 18px 18px 45px #d1d1d1, -18px -18px 45px #ffffff;
+  margin: 50px 0;
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  max-width: 100%;
+}
+.result-container .title-result .img-container {
+  max-width: 500px;
+  background-color: red;
+  height: 10vh;
+}
+.result-container .info-container {
+  padding: 30px 0 10px 20px;
+  border-radius: 18px;
+  background: #f0f0f0;
+  box-shadow: 18px 18px 45px #d1d1d1, -18px -18px 45px #ffffff;
+  margin: 50px 0;
+}
+.result-container .cause-container {
+  padding: 30px 0 10px 20px;
+  border-radius: 18px;
+  background: #f0f0f0;
+  box-shadow: 18px 18px 45px #d1d1d1, -18px -18px 45px #ffffff;
+  margin: 50px 0;
+}
+.result-container .symptoms-container {
+  padding: 30px 0 10px 20px;
+  border-radius: 18px;
+  background: #f0f0f0;
+  box-shadow: 18px 18px 45px #d1d1d1, -18px -18px 45px #ffffff;
+  margin: 50px 0;
+}
+.result-container .instruction-container {
+  padding: 30px 0 10px 20px;
+  border-radius: 18px;
+  background: #f0f0f0;
+  box-shadow: 18px 18px 45px #d1d1d1, -18px -18px 45px #ffffff;
+  margin: 50px 0;
+}/*# sourceMappingURL=RemediesFirstAids.css.map */
