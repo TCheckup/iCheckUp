@@ -1,0 +1,123 @@
+
+
+@mixin boxHover {
+    border-radius: 19px;
+    background: #f0f0f0;
+    box-shadow:  26px 26px 52px #cecece,
+             -26px -26px 52px #ffffff;
+}
+
+@mixin borderDefault {
+    border: 1px solid rgb(168, 164, 164);
+    border-radius: 19px;
+}
+
+@mixin buttonStyle($paddingLeftRight) {
+    padding: 10px $paddingLeftRight;
+    border-radius: 7px;
+    background-color: #fff;
+    @include borderDefault();
+    cursor: pointer;
+}
+
+section {
+    margin: 0 80px;
+    
+    .intro { 
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+
+        .description-container {
+            margin: 0 80px;
+
+            .title-home {
+                font-size: 50px;
+            }
+
+            button {
+                @include buttonStyle(40px);
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .home-btns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        grid-auto-rows: minmax(170px, auto);
+        justify-content: center;
+        margin: 20vh 0 30vh;
+        
+       
+        
+        .text { 
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            @include borderDefault();
+            padding-bottom: 20px;
+            cursor: pointer;
+            
+            &:hover {
+                @include boxHover();
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    font-weight: 600;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .find-hospital { 
+        margin: 0 80px 100px;
+        
+        h2 {
+            font-size: 35px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            @include borderDefault();
+        }
+    }
+
+    .feedback-container {
+        margin: 0 80px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 35px;
+        }
+
+        input {
+            width: 80%;
+            margin: 20px;
+            @include borderDefault();
+            padding: 17px;
+        }
+        
+        button {
+            @include buttonStyle(80px);
+        }
+    }
+
+}
