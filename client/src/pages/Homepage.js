@@ -12,10 +12,12 @@ const Homepage = () => {
       <section>
         {/* Search Bar */}
         <div className='intro'>  
+
           <div className='description-container'> 
             <h2 className='title-home'>
               Greetings, {username}
             </h2>
+             <Link to="/start-symptoms-checker">Start Symptoms Checking</Link>
             <button>Start Symptoms</button>
           </div>
           <div className='img-descp-container'> 
