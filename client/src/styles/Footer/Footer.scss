@@ -4,9 +4,13 @@ $baseColor: #ffffff;
     padding: 20px;
 }
 
-@mixin  removeDefaultAnchor {
+@mixin removeDefaultAnchor {
     text-decoration: none;
     color: $baseColor; 
+}
+
+@mixin linksHover { 
+    text-decoration: underline;
 }
 
 .footer-container { 
@@ -42,6 +46,10 @@ $baseColor: #ffffff;
                 a { 
                     cursor: pointer;
                     @include removeDefaultAnchor();
+
+                    &:hover { 
+                        @include linksHover();
+                    }
                     
                 }
             }
@@ -62,6 +70,9 @@ $baseColor: #ffffff;
                     cursor: pointer;
                     @include removeDefaultAnchor();
 
+                    &:hover { 
+                        @include linksHover();
+                    }
                 }
             }
         }

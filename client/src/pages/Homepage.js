@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
  
 // components 
 import SearchBar from '../components/Searchbar';
+import MapGoogle from '../components/MapsGoogle';
 
 // styles 
 import '../styles/Homepage/Homepage.css';
@@ -44,12 +45,10 @@ const Homepage = () => {
         {/* Find hospital */}
         <div className='find-hospital'>
             <h2>Find Clinic Near You</h2>
-            <div className='map-container'>
-          </div>
+              <MapGoogle />
         </div>
 
         <div className='feedback-container'>
-          
           <h2>Send Feedback</h2>
           <input type="text" placeholder='Write a feedback' />
           <button>Submit Feedback</button>

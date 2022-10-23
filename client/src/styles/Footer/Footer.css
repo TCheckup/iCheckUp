@@ -25,6 +25,9 @@
   text-decoration: none;
   color: #ffffff;
 }
+.footer-container .service-containers ul li a:hover {
+  text-decoration: underline;
+}
 .footer-container .links-container {
   padding: 20px;
 }
@@ -35,4 +38,7 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
+}
+.footer-container .links-container ul li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=Footer.css.map */
