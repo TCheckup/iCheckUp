@@ -2,6 +2,7 @@
 .login-container {
   box-sizing: border-box;
   margin: 0 80px;
+  height: 100vh;
 }
 .login-container .form-container {
   font-family: "Montserrat", sans-serif;
@@ -88,7 +89,16 @@
   border-radius: 7px;
   border: 1px solid rgb(190, 188, 188);
   margin-top: 1.2em;
-  padding: 20px 50px;
+  padding: 10px 40px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  text-align: left;
+}
+.login-container .form-container .soc-btn .google-btn {
+  color: rgb(108, 108, 108);
+  background-color: #fff;
+}
+.login-container .form-container .soc-btn .fb-btn {
+  background-color: rgb(62, 88, 165);
+  color: #fff;
 }/*# sourceMappingURL=LoginPage.css.map */
