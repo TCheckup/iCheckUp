@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 // components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -32,7 +34,7 @@ const LoginPage = () => {
   // field validation
   const validate = (values) => { 
     const errors = {}; 
-    const regex = /^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/; 
+    const regex =/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i; 
     
     if(!values.email) { 
       errors.email = "Email required!"; 
@@ -62,7 +64,7 @@ const LoginPage = () => {
        <div className='form-container'>
         <div className='regis-container'>
           <span>Already have an account?</span>
-          <button className='register-btn'>Register</button>
+          <Link className="register-btn" to="/sign-up">Register</Link>
         </div>
         <h2>Login with your data that you entered during Your registration</h2>
         <div className='form'>

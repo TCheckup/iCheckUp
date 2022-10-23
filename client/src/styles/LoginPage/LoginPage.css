@@ -21,6 +21,14 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+.login-container .form-container .regis-container .register-btn {
+  text-decoration: none;
+  margin-left: 7px;
+  color: #000;
+}
+.login-container .form-container .regis-container .register-btn:hover {
+  font-weight: 700;
+}
 .login-container .form-container .form {
   display: flex;
   justify-content: center;
@@ -29,7 +37,6 @@
 }
 .login-container .form-container .form label {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -51,6 +58,13 @@
   border: none;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  background-color: #05204A;
+  color: #fff;
+}
+.login-container .form-container .form button:hover {
+  border: 1px solid #05204A;
+  color: #05204A;
+  background-color: #fff;
 }
 .login-container .form-container .soc-btn {
   display: flex;
