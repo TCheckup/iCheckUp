@@ -25,10 +25,14 @@ const LoginPage = () => {
   // handle submit
   const handleSubmit  = (e) => { 
     e.preventDefault(); 
+
     setFormErrors(validate(formValues)); 
     setIsSubmit(true); 
 
-    console.log("clicked");
+    // clear forms
+    if(Object.keys(formErrors).length === 0 && isSubmit){
+      setFormValues(initialValues);
+    }
   }
 
   // field validation
@@ -37,15 +41,15 @@ const LoginPage = () => {
     const regex =/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i; 
     
     if(!values.email) { 
-      errors.email = "Email required!"; 
+      errors.email = "*Email required!"; 
     } else if(!regex.test(values.email)){ 
       errors.email = "This is not a valid email format!"; 
     }
 
     if(!values.password) { 
-      errors.password = "Password is required!"; 
-    } else if(values.password < 4){
-      errors.password = "Password must be more than 4 characters!"; 
+      errors.password = "*Password required!"; 
+    } else if(values.password.length < 4){
+      errors.password = "*Password must be more than 4 characters!"; 
     }
 
     console.log(errors);
@@ -67,14 +71,16 @@ const LoginPage = () => {
           <Link className="register-btn" to="/sign-up">Register</Link>
         </div>
         <h2>Login with your data that you entered during Your registration</h2>
-        <div className='form'>
+        <form onSubmit={handleSubmit}>
 
           <label>Email</label>
           <input 
               name="email"
               onChange={(e) => handleChange(e)} 
               type="text" 
-              placeholder="Email.." />   
+              placeholder="Email.." 
+              value={formValues.email}
+              />   
           <p>{formErrors.email}</p>
 
           <label>Password</label>
@@ -82,13 +88,16 @@ const LoginPage = () => {
               name="password"
               onChange={(e) => handleChange(e)} 
               type="text" 
-              placeholder='Password...'/>
+              placeholder='Password...'
+              value={formValues.password}
+              />
+
           <p>{formErrors.password}</p>
+
           <button 
-              onClick={(e)=> { handleSubmit(e) }}
-            
+              type='submit'
               >Start Now!</button>
-        </div>
+        </form>
       
         <div className='soc-btn'>
           <button className='google-btn'><FontAwesomeIcon icon={faGoogle}/>Sign in with Google</button>
