@@ -2,11 +2,10 @@
 
 $baseColor: #05204A; 
 
-@mixin flexColumn {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@mixin gridColumn {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    
 }
 
 @mixin border {
@@ -18,81 +17,103 @@ $baseColor: #05204A;
     box-sizing: border-box;
     margin: 0 80px;
 
+
     .form-container { 
-        @include flexColumn(); 
+
         font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
         h2 {
             width: 40%;
-            text-align: center;
-            margin-bottom: 2em;
             font-size: 1.5em;
+        }
+
+        span { 
+            display: inline-block;
+        }
+
+        h2, span { 
+            margin: 2em auto;
+            text-align: center;
         }
 
         .regis-container {
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-end;
-            
+            margin: 0 auto;
+            color:rgb(148, 148, 148);
+
             .register-btn { 
                 text-decoration: none; 
                 margin-left: 7px;
-                color: #000; 
-
+                color: $baseColor; 
+                font-weight: 600;
+                
                 &:hover { 
                     font-weight: 700;
+                    text-decoration: underline;
                 }
             }
         }
 
-        .form {
-            @include flexColumn();
+        form {
+            @include gridColumn();
+            margin: 0 30%;
             
             label { 
+                color: $baseColor;
+                font-weight: 700;
                 display: flex;
-                justify-content: flex-start; 
-                align-items: flex-start;
             }
 
             input {
                 @include border();
-                width: 300px;
                 height: 30px;
                 max-width: 100%;
                 margin-top: 1em;
-                padding-left: 10px;
+                padding: 17px;
                 font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                color: $baseColor;
             }
 
             button {
-                @include border();
-                margin: 20px 0;
-                padding: 10px 9.3em;
-                border: none;
                 font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                @include border();
+                border: none;
+                margin: 20px 0;
+                padding: 15px 9.3em;
                 cursor: pointer;
                 background-color: $baseColor;
                 color: #fff;
 
                 &:hover { 
-                    border: 1px solid $baseColor; 
-                    color: $baseColor; 
-                    background-color: #fff;
+                    opacity: 0.9;
+                    font-weight: 700;
                 }
+            }
+
+            p { 
+                color: rgb(230, 39, 39);
+                margin-top: 0;  
             }
         }
 
         .soc-btn { 
-            @include flexColumn();
-            margin-top: 3em;
-            width: 8.3em;
+            @include gridColumn();
+            margin: 3em auto 0;
             position: relative;
 
             button {
                 @include border();
-                margin-top: 10px;
-                padding: 5px 100%;
+                margin-top: 1.2em;
+                padding: 20px 50px;
                 font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
             }
         }
     }
