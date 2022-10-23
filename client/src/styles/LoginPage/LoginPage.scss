@@ -16,7 +16,7 @@ $baseColor: #05204A;
 .login-container { 
     box-sizing: border-box;
     margin: 0 80px;
-
+    height: 100vh;
 
     .form-container { 
 
@@ -111,9 +111,19 @@ $baseColor: #05204A;
             button {
                 @include border();
                 margin-top: 1.2em;
-                padding: 20px 50px;
+                padding: 10px 40px;
                 font-family: 'Montserrat', sans-serif;
                 cursor: pointer;
+                text-align: left;
+            }
+
+            .google-btn { 
+                color: rgb(108,108,108);
+                background-color: #fff;
+            }
+            .fb-btn { 
+                background-color: rgb(62,88,165);
+                color: #fff;
             }
         }
     }

@@ -100,13 +100,8 @@ const LoginPage = () => {
         </form>
       
         <div className='soc-btn'>
-          <button className='google-btn'><FontAwesomeIcon icon={faGoogle}/>Sign in with Google</button>
-          <button className='fb-btn'><FontAwesomeIcon icon={faFacebook}/>Sign in with Facebook</button>
-        </div>
-
-        <div className='login-footer'>
-          <span>Don't you have an account?</span> 
-          <button>Sign Up</button>
+          <button className='google-btn'><FontAwesomeIcon icon={faGoogle}/>   Sign in with Google</button>
+          <button className='fb-btn'><FontAwesomeIcon icon={faFacebook}/>   Sign in with Facebook</button>
         </div>
       </div>
     </section> 
