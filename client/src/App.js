@@ -15,6 +15,7 @@ import MedicalBook from './pages/MedicalBook';
 import RemediesFirstAid from './pages/RemediesFirstAid';
 import Pill_Identifier from './pages/Pill_Identifier';
 import SymptomsTracker from './pages/SymptomsTracker';
+import SignUp from './pages/SignUp';
 
 const socket = io("http://localhost:4000", { transports: ["websocket"]});
 
@@ -35,6 +36,7 @@ function App() {
           <Route path='/how-to-works' element={<HowItWorks/>} />
           <Route path='/download-app' element={<DownloadApp/>} />
           <Route path='/login' element={<LoginPage/>} />
+          <Route path='/sign-up' element={<SignUp/>} />
 
           {/* homepage routes */}
           <Route path='/medical-book' element={<MedicalBook/>} />
