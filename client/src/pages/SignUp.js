@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import '../styles/SignUp/SignUp.css';
 
-const SignUp = () => {
+const SignUp = ({socket}) => {
     const initialSignUp = { 
         firstName: "", 
         lastName: "",
@@ -14,6 +14,7 @@ const SignUp = () => {
     const [formSignUp, setFormSignUp] = useState(initialSignUp);
     const [errorSignUp, setErrorSignUp] = useState({});
     const [isSignUpSubmit, setIsSignUpSubmit] = useState(false); 
+    const [success, setSuccess] = useState(false);
 
     const handleOnChange = (e) => { 
         const {name, value} = e.target;  
@@ -23,13 +24,30 @@ const SignUp = () => {
 
     const handleSubmitForm = (e) => { 
         e.preventDefault(); 
-
+        
+        // set error validate
         setErrorSignUp(validate(formSignUp));
         setIsSignUpSubmit(true);
 
         // clear forms
         if(Object.keys(errorSignUp).length === 0 && isSignUpSubmit){
-            setFormSignUp(initialSignUp);
+            
+            // send data to serve via web socket 
+            socket.emit('sign-up-account', formSignUp);
+            
+            // receive response from server
+            socket.on('response-sign-in', response =>{ 
+                if(response){
+                    // show modal
+                    setSuccess(true);
+                    // clear form
+                    setFormSignUp(initialSignUp);
+
+                    setTimeout(() => { 
+                        setSuccess(false);
+                    }, 3000)
+                }
+            })
         }
     }
 
@@ -67,9 +85,9 @@ const SignUp = () => {
 
     return (
     <section>
-
         <div className='form-sign-up'>
             <h2>Sign Up</h2>
+            <p>{success ? 'Your sign up have been saved!' : ""}</p>
             <form onSubmit={handleSubmitForm}>
                 <label>First Name</label>
                 <input 

@@ -21,10 +21,6 @@ const socket = io("http://localhost:4000", { transports: ["websocket"]});
 
 function App() {
 
-  socket.on("send-data", (data) => {
-    console.log(data);
-  })
-
   return (
     <>
       {/* Routes */}
@@ -36,7 +32,7 @@ function App() {
           <Route path='/how-to-works' element={<HowItWorks/>} />
           <Route path='/download-app' element={<DownloadApp/>} />
           <Route path='/login' element={<LoginPage/>} />
-          <Route path='/sign-up' element={<SignUp/>} />
+          <Route path='/sign-up' element={<SignUp socket={socket}/>} />
 
           {/* homepage routes */}
           <Route path='/medical-book' element={<MedicalBook/>} />
