@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-
+import axios from 'axios';
 
 // components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,6 +8,8 @@ import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 // css
 import '../styles/LoginPage/LoginPage.css';
+
+
 
 const LoginPage = () => {
   const initialValues = { email: "", password: "" }; 
@@ -62,6 +64,14 @@ const LoginPage = () => {
       console.log(formValues);
     }
   }, [formErrors])
+
+  // fetch data from server (example)
+  useEffect(() => { 
+    fetch('http://localhost:4000/home')
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err))
+  }, [])
 
   return (
     <section className='login-container'>
