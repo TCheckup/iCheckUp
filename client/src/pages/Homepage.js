@@ -20,7 +20,9 @@ const Homepage = () => {
             <h2 className='title-home'>
               Greetings, {username}
             </h2>
-            <button>Start Symptoms</button>
+            <a Link to="symptoms-checker">
+              <button>Start Symptoms</button>
+            </a>
           </div>
           <div className='img-descp-container'> 
           </div>
