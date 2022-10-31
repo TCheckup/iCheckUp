@@ -11,13 +11,14 @@ import Homepage from './pages/Homepage';
 import DownloadApp from './pages/DownloadApp';
 import HowItWorks from './pages/HowItWorks';
 import LoginPage from './pages/LoginPage';
-import SymptomsChecker from './pages/SymptomsChecker';
 import MedicalBook from './pages/MedicalBook';
 import MedicineReminder from './pages/MedicineReminder';
-import RemediesFirstAid from './pages/RemediesFirstAid';
 import Pill_Identifier from './pages/Pill_Identifier';
-import SymptomsTracker from './pages/SymptomsTracker';
+import RemediesBookmarks from './pages/RemediesBookmarks';
+import RemediesFirstAid from './pages/RemediesFirstAid';
 import SignUp from './pages/SignUp';
+import SymptomsChecker from './pages/SymptomsChecker';
+import SymptomsTracker from './pages/SymptomsTracker';
 
 const socket = io("http://localhost:4000", { transports: ["websocket"]});
 
