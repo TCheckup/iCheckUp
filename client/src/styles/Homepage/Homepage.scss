@@ -1,4 +1,5 @@
 
+$baseBlueDark:#05204A; 
 
 @mixin boxHover {
     border-radius: 19px;
@@ -19,6 +20,8 @@
     @include borderDefault();
     cursor: pointer;
 }
+
+
 
 section {
     margin: 0 80px;
@@ -59,27 +62,68 @@ section {
        
         
         .text { 
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-            align-items: center;
-            @include borderDefault();
-            padding-bottom: 20px;
-            cursor: pointer;
+             display: inline-flex;
+             @include borderDefault();
+            // padding-bottom: 20px;
+            // cursor: pointer;
             
+            // icons 
+            .fa-pills, 
+            .fa-kit-medical,
+            .fa-bed-pulse,
+            .fa-book-medical { 
+                font-size:80px;
+                padding: 50px;
+                padding-bottom: 75px;
+                background-color: $baseBlueDark;
+                width: 150px;
+                color: rgb(233, 233, 233);
+            }
+
+   
+
             &:hover {
                 @include boxHover();
             }
-
-            a {
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
+            
+            // button text container
+            .btn-text {
+                margin-top: 20px;
+                margin-bottom: 15px;
+                // link title
+                a {
+                    text-decoration: none;
+                    color: $baseBlueDark;
+                    margin-left: 30px;
+                    font-size: 1.3em;
                     font-weight: 600;
-                    text-decoration: underline;
+
+    
+                    &:hover :not(.click-btn){
+                        text-decoration: underline;
+                        font-weight: 800;
+                    }
+                }
+
+                p {
+                    margin-left: 30px;
+                    width: 300px;
+                    color: #57585a; 
+
+                }
+
+                .click-btn{ 
+                    margin-left: 30px;
+                    font-size: 1em;
+                    color: #464b53; 
+
+                    &:hover { 
+                        color: $baseBlueDark;
+                        font-weight: 900;
+                    }
                 }
             }
+            
         }
     }
 

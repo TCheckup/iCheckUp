@@ -35,27 +35,54 @@ section .home-btns {
   margin: 20vh 0 30vh;
 }
 section .home-btns .text {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: center;
+  display: inline-flex;
   border: 1px solid rgb(168, 164, 164);
   border-radius: 19px;
-  padding-bottom: 20px;
-  cursor: pointer;
+}
+section .home-btns .text .fa-pills,
+section .home-btns .text .fa-kit-medical,
+section .home-btns .text .fa-bed-pulse,
+section .home-btns .text .fa-book-medical {
+  font-size: 80px;
+  padding: 50px;
+  padding-bottom: 75px;
+  background-color: #05204A;
+  width: 150px;
+  color: rgb(233, 233, 233);
 }
 section .home-btns .text:hover {
   border-radius: 19px;
   background: #f0f0f0;
   box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff;
 }
-section .home-btns .text a {
-  text-decoration: none;
-  color: #000;
+section .home-btns .text .btn-text {
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
-section .home-btns .text a:hover {
+section .home-btns .text .btn-text a {
+  text-decoration: none;
+  color: #05204A;
+  margin-left: 30px;
+  font-size: 1.3em;
   font-weight: 600;
+}
+section .home-btns .text .btn-text a:hover :not(.click-btn) {
   text-decoration: underline;
+  font-weight: 800;
+}
+section .home-btns .text .btn-text p {
+  margin-left: 30px;
+  width: 300px;
+  color: #57585a;
+}
+section .home-btns .text .btn-text .click-btn {
+  margin-left: 30px;
+  font-size: 1em;
+  color: #464b53;
+}
+section .home-btns .text .btn-text .click-btn:hover {
+  color: #05204A;
+  font-weight: 900;
 }
 section .find-hospital {
   margin: 0 80px 100px;
