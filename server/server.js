@@ -10,14 +10,11 @@ const SignUpRoute = require('./routes/iCheckUpRoutes');
 
 const app = express(); 
 
-
 const server = http.createServer(app); 
 
 // middlewares 
 app.use(express.json()); 
-app.use(cors({
-    origin: '*'
-}))
+app.use(cors());
 
 // db URI and keys
 const keys = require('./model/helper/keys');
@@ -40,10 +37,13 @@ const io = new Server(server, {
     }
 })
 
+
 app.get("/home", (req, res) => {
     res.json({username: "darius", password: "12345"});
 })
 
+
+// web socket connection
 io.on("connection", socket => {
     console.log(`User connected: ${socket.id}`) 
     
@@ -71,8 +71,9 @@ io.on("connection", socket => {
     })
 })
 
-// middle wares 
+// middlewires routes
 app.use("auth", SignUpRoute);
+
 
 const PORT = process.env.PORT || 4000; 
 
