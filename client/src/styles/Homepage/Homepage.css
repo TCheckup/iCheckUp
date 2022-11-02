@@ -1,5 +1,5 @@
 section {
-  margin: 0 80px;
+  margin: 0 70px;
 }
 section .intro {
   width: 100%;
@@ -57,7 +57,7 @@ section .home-btns .text:hover {
 }
 section .home-btns .text .btn-text {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 section .home-btns .text .btn-text a {
   text-decoration: none;

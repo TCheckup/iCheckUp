@@ -1,1 +1,76 @@
-/*# sourceMappingURL=Pill_Identifier.css.map */
+section .nav-pill {
+  margin-left: 80px;
+}
+section .nav-pill h2 {
+  font-size: 3.5rem;
+}
+section .shape-color {
+  margin: 0 80px;
+}
+section .shape-color .pill-btns {
+  display: flex;
+}
+section .shape-color .pill-btns button {
+  padding: 20px 10px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 7px;
+  border: 1px solid rgb(138, 138, 138);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #05204A;
+  background-color: rgb(247, 247, 247);
+}
+section .shape-color .pill-btns button:hover, section .shape-color .pill-btns button:focus {
+  background-color: #05204A;
+  color: rgb(238, 237, 237);
+}
+section .shape-container, section .color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .shape-container {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid rgb(233, 232, 232);
+  background-color: rgb(216, 216, 216);
+}
+section .color-container {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid rgb(233, 232, 232);
+  background-color: rgb(216, 216, 216);
+}
+section .btn-results {
+  max-width: 100%;
+  margin: 0 80px;
+}
+section .btn-results button {
+  padding: 20px 10px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 7px;
+  border: 1px solid rgb(138, 138, 138);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #05204A;
+  background-color: rgb(247, 247, 247);
+  margin-top: 2.5em;
+}
+section .btn-results button:hover, section .btn-results button:focus {
+  background-color: #05204A;
+  color: rgb(238, 237, 237);
+}
+section .result-list-container {
+  margin: 0 80px 5em;
+  max-width: 100%;
+  height: 100vh;
+  border: 1px solid #000;
+  border: 1px solid rgb(233, 232, 232);
+  background-color: rgb(216, 216, 216);
+}/*# sourceMappingURL=Pill_Identifier.css.map */
