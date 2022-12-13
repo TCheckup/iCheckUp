@@ -6,6 +6,7 @@ export const loginUser = (email, password, func) => {
     .then((userCredential) => {
       const user = userCredential.user;
       func();
+      alert("You have signed");
     })
     .catch((err) => {
       alert("Invalid email or password");
