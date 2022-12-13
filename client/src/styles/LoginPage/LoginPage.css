@@ -2,69 +2,103 @@
 .login-container {
   box-sizing: border-box;
   margin: 0 80px;
+  height: 100vh;
 }
 .login-container .form-container {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
 }
 .login-container .form-container h2 {
   width: 40%;
-  text-align: center;
-  margin-bottom: 2em;
   font-size: 1.5em;
+}
+.login-container .form-container span {
+  display: inline-block;
+}
+.login-container .form-container h2, .login-container .form-container span {
+  margin: 2em auto;
+  text-align: center;
 }
 .login-container .form-container .regis-container {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
+  margin: 0 auto;
+  color: rgb(148, 148, 148);
 }
-.login-container .form-container .form {
+.login-container .form-container .regis-container .register-btn {
+  text-decoration: none;
+  margin-left: 7px;
+  color: #05204A;
+  font-weight: 600;
+}
+.login-container .form-container .regis-container .register-btn:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.login-container .form-container form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 30%;
+}
+.login-container .form-container form label {
+  color: #05204A;
+  font-weight: 700;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-.login-container .form-container .form label {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.login-container .form-container .form input {
+.login-container .form-container form input {
   border-radius: 7px;
   border: 1px solid rgb(190, 188, 188);
-  width: 300px;
   height: 30px;
   max-width: 100%;
   margin-top: 1em;
-  padding-left: 10px;
+  padding: 17px;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #05204A;
 }
-.login-container .form-container .form button {
+.login-container .form-container form button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
   border-radius: 7px;
   border: 1px solid rgb(190, 188, 188);
-  margin: 20px 0;
-  padding: 10px 9.3em;
   border: none;
-  font-family: "Montserrat", sans-serif;
+  margin: 20px 0;
+  padding: 15px 9.3em;
   cursor: pointer;
+  background-color: #05204A;
+  color: #fff;
+}
+.login-container .form-container form button:hover {
+  opacity: 0.9;
+  font-weight: 700;
+}
+.login-container .form-container form p {
+  color: rgb(230, 39, 39);
+  margin-top: 0;
 }
 .login-container .form-container .soc-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 3em;
-  width: 8.3em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 3em auto 0;
   position: relative;
 }
 .login-container .form-container .soc-btn button {
   border-radius: 7px;
   border: 1px solid rgb(190, 188, 188);
-  margin-top: 10px;
-  padding: 5px 100%;
+  margin-top: 1.2em;
+  padding: 10px 40px;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  text-align: left;
+}
+.login-container .form-container .soc-btn .google-btn {
+  color: rgb(108, 108, 108);
+  background-color: #fff;
+}
+.login-container .form-container .soc-btn .fb-btn {
+  background-color: rgb(62, 88, 165);
+  color: #fff;
 }/*# sourceMappingURL=LoginPage.css.map */
