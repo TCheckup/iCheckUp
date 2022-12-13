@@ -23,7 +23,9 @@ const LoginPage = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const redirect = () => {};
+  const redirect = () => {
+    navigate("/");
+  };
 
   const loginUser = async (email, password) => {
     try {
@@ -32,6 +34,7 @@ const LoginPage = () => {
       console.log(error);
     }
   };
+
   // handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
