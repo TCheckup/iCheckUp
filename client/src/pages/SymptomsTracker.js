@@ -1,18 +1,17 @@
-import React from 'react'
+import React from "react";
 
-// components 
-import SearchBar from '../components/Searchbar';
+// components
+import SearchBar from "../components/Searchbar";
 
-// css  
-import '../styles/SymptomsTracker/SymptomsTracker.css';
-
+// css
+import "../styles/SymptomsTracker/SymptomsTracker.css";
 
 const SymptomsTracker = () => {
   return (
     <div>
-        <SearchBar />
+      <SearchBar />
     </div>
-  )
-}
+  );
+};
 
-export default SymptomsTracker
+export default SymptomsTracker;
