@@ -1,7 +1,7 @@
 import React from 'react'
 
 // components 
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/Searchbar';
 
 // css  
 import '../styles/MedicineReminder/MedicineReminder.css';
