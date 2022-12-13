@@ -8,6 +8,7 @@ import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 // css
 import "../styles/LoginPage/LoginPage.css";
+import { loginUser } from "../lib/auth";
 
 const LoginPage = () => {
   const initialValues = { email: "", password: "" };
@@ -27,7 +28,7 @@ const LoginPage = () => {
     navigate("/");
   };
 
-  const loginUser = async (email, password) => {
+  const loginDataUser = async (email, password) => {
     try {
       loginUser(email, password, redirect);
     } catch (error) {
@@ -45,6 +46,8 @@ const LoginPage = () => {
     // clear forms
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       setFormValues(initialValues);
+
+      loginDataUser(formValues.email, formValues.password);
     }
   };
 
