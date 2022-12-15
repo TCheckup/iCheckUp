@@ -19,7 +19,7 @@ const MapGoogle = () => {
 }
 
 function Map(){
-    const center = {lat: 10.294456898112978, lng: 123.88121366500856};
+    const center = {lat: 11.771909554228976, lng: 124.88567332010416};
 
     return (
         <>

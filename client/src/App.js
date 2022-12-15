@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import { AuthContextProvider } from "./store/auth.context";
 
 // main pages
-<<<<<<< HEAD
 const Homepage = lazy(() => import("./pages/Homepage"));
 const DownloadApp = lazy(() => import("./pages/DownloadApp"));
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
@@ -18,20 +17,6 @@ const RemediesFirstAid = lazy(() => import("./pages/RemediesFirstAid"));
 const Pill_Identifier = lazy(() => import("./pages/Pill_Identifier"));
 const SymptomsTracker = lazy(() => import("./pages/SymptomsTracker"));
 const SignUp = lazy(() => import("./pages/SignUp"));
-=======
-import Homepage from './pages/Homepage';
-import DownloadApp from './pages/DownloadApp';
-import HowItWorks from './pages/HowItWorks';
-import LoginPage from './pages/LoginPage';
-import MedicalBook from './pages/MedicalBook';
-import MedicineReminder from './pages/MedicineReminder';
-import Pill_Identifier from './pages/Pill_Identifier';
-import RemediesBookmarks from './pages/RemediesBookmarks';
-import RemediesFirstAid from './pages/RemediesFirstAid';
-import SignUp from './pages/SignUp';
-import SymptomsChecker from './pages/SymptomsChecker';
-import SymptomsTracker from './pages/SymptomsTracker';
->>>>>>> sean2-branch
 
 const socket = io("http://localhost:4000", { transports: ["websocket"] });
 
