@@ -18,7 +18,7 @@ const Homepage = () => {
   const [username, setUsername] = useState("Sean Edward"); 
   return (
     <>
-      <section>
+      <section>...
         {/* Search Bar */}
         <SearchBar />
         <div className='intro'>  
