@@ -8,8 +8,8 @@ const Footer = () => {
     <section className='footer-container'>
       <div className='about-us-con'>
         <h3>About Us</h3>
-        <p>Biringan City</p>
-        <p>Cebu City, Brgy. Catbalogan, Biringan, Phillipiness 8700.</p>
+        <p>Catbalogan City</p>
+        <p>Samar State University (SSU), Catbalogan City, Samar, Phillipiness 8700.</p>
         <div className='soc-icons'>
           <a href="https://www.facebook.com/">fb</a>
           <a href="https://www.instagram.com/">instagram</a>

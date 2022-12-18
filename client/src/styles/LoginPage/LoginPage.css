@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap");
 .login-container {
   box-sizing: border-box;
-  margin: 0 80px;
-  height: 100vh;
+  margin: 2rem 80px;
+  height: auto;
 }
 .login-container .form-container {
   font-family: "Montserrat", sans-serif;
@@ -17,7 +17,8 @@
 .login-container .form-container span {
   display: inline-block;
 }
-.login-container .form-container h2, .login-container .form-container span {
+.login-container .form-container h2,
+.login-container .form-container span {
   margin: 2em auto;
   text-align: center;
 }
